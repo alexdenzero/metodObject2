@@ -26,6 +26,6 @@ public class Autor {
 
     @Override
     public String toString() {
-        return autor + ": " + autor;
+        return "автор - " + autor;
     }
 }

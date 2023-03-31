@@ -38,6 +38,6 @@ public class Book {
 
     @Override
     public String toString() {
-        return name + ": " + name;
+        return "название - " + name + ", года выпуска - " +age;
     }
 }
