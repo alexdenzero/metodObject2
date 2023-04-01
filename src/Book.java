@@ -24,14 +24,12 @@ public class Book {
     }
 
 
-
     @Override
-    public boolean equals(Object other) {
-        if (this.getClass() != other.getClass()) {
-            return false;
-        }
-        Book b2 = (Book) other;
-        return name.equals(b2.name);
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Book book = (Book) o;
+        return age == book.age && Objects.equals(name, book.name) && Objects.equals(autor, book.autor);
     }
 
     @Override
